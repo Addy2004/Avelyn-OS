@@ -23,10 +23,8 @@ void print_ch(char ch){
 }
 
 void print(const char* str){
-    char nl = '\n';
     for(size_t i = 0; 1; i++){
         if(str[i] == '\0'){
-            print_ch(nl);
             return;
         } else{
             print_ch(str[i]);
