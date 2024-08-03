@@ -1,7 +1,7 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
-#include <headers/memfunc.h>
+#include <headers/string.h>
 #include <kernel/main.h>
 
 

@@ -3,11 +3,15 @@
 #include <headers/limine.h>
 #include <flanterm/flanterm.h>
 #include <flanterm/backends/fb.h>
+#include "string.h"
 #include <stddef.h>
 #include <stdint.h>
+#include <stdarg.h>
+#include <stdbool.h>
+#include <limits.h>
 
 void print_init(struct limine_framebuffer_request);
 
-void print_ch(char);
+int print_ch(int);
 
-void print(const char* );
+int print(const char* __restrict, ...);

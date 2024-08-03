@@ -2,8 +2,8 @@
 #include "../headers/print.h"
 #include "string.h"
 
-#define OS_NAME "Avelyn OS\n"
-#define VERSION "Version: 0.0.1\n"
+#define OS_NAME "Avelyn OS"
+#define VERSION "0.0.1"
 
 void kernel_main(struct limine_framebuffer_request framebuffer_request){
 
@@ -27,10 +27,10 @@ void kernel_main(struct limine_framebuffer_request framebuffer_request){
 
     print_init(framebuffer_request);
 
-    print(OS_NAME);
-    print(VERSION);
-    print("Bootloader name: "); print(bootloader_name); print("\n");
-    print("Bootloader version: "); print(bootloader_version); print("\n");
-    // print("Number of memory map entries present: "); print(entry_count); print("\n");
+    print("%s\n",OS_NAME);
+    print("Version %s\n", VERSION);
+    print("Bootloader name: %s\n", bootloader_name);
+    print("Bootloader version: %s\n", bootloader_version);
+    print("Number of memory map entries present: %i\n", entry_count);
     print(">> ");
 }
